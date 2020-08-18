@@ -10,7 +10,10 @@ for x in product(alphabet, repeat=domain_length):
     domain = pref + ".ee"
     c += 1
 
-    condition = (pref[0] == pref [3]) and (pref[1] == pref [2])
+    # Example condition, checks if pattern is ABBA. Feel free to change.
+    # If you don't want to use then just set it to: condition = True
+    condition = (pref[0] == pref[3]) and (pref[1] == pref[2])
+
     if c % 1000 == 0:
         print(c)  # Shows that program works in console.
     if condition and whois.whois(domain).status is None:
