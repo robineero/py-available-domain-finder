@@ -1,5 +1,7 @@
 ### Available domain finder ###
 
+**Does not work with .ee domains anymore due to the change of python whois library**
+
 Simple scanner for available domain names written in Python.
 Results are written into `domains-available.txt` file.
 
