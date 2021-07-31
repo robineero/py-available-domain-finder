@@ -1,8 +1,6 @@
 ### Available domain finder ###
 
-**Does not work with .ee domains anymore due to the change of python whois library**
-
-Simple scanner for available domain names written in Python.
+Simple scanner for available domain names written in Python using [python-whois package](https://pypi.org/project/python-whois/) (0.7.3). Tested with .ee domains.
 Results are written into `domains-available.txt` file.
 
-Does not work with .eu domains (which needs 1 sec sleep time between every request to avoid running into limit and gives false-positive results). Tested with .ee domains.
+Code does not work with .eu domains (which need 1 sec sleep time between every request to avoid running into limit and gives false-positive results).
