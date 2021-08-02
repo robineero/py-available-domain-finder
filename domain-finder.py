@@ -5,10 +5,10 @@ domains_available = open("domains_available.txt", "w")
 alphabet = "abcdefghijklmnopqrstuvwxyz"  # Letters you would like to use.
 domain_length = 3
 for x in product(alphabet, repeat=domain_length):
-    body = "".join(x)  # Separate pref variable to set additional conditions for domain.
+    body = "".join(x)  # Separate body variable to set additional conditions for domain.
     domain = body + ".ee"
 
-    # Example condition, checks if pattern is ABA. Feel free to change.
+    # Example condition, checks if body pattern is ABA. Feel free to change.
     # If you don't want to use then just set it to: condition = True
     condition = (body[0] == body[2])
 
